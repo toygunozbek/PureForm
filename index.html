@@ -1,0 +1,114 @@
+﻿<!-- Developer:Toygun Ozbek / toygunn.com -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PureForm.js</title>
+    <link href="App_Themes/style.css" rel="stylesheet" />
+    <link href="App_Themes/pureForm.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.pureForm.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.pureSelect').pureForm({ // Select
+                dropDownWidth: 285,
+                dropDownHeight: 30,
+                dropDownPadding: 5
+            });
+
+            $('.pureCheck').pureForm({ // Checkbox
+                checkBoxWidth: 32,
+                checkBoxHeight: 32,
+            });
+
+            $('.pureRadio').pureForm({ // Radio
+                radioWidth: 20,
+                radioHeight:20
+            });
+        });
+    </script>
+</head>
+    <body>
+        
+        <div class="container">
+           
+            <h1>PureForm()</h1>
+            <h3>Custom form elements</h3>
+        
+            <div class="section">
+                <h4>Select ( Dropdown List )</h4>
+                <p class="desc">$('#elementName').pureForm();
+                    <h5>Variables</h5>
+                    <em>dropDownWidth: 150</em>
+                    <em>dropDownHeight: 30</em>
+                    <em>dropDownPadding: 5</em>
+                    <h5>Three line css ↓</h5>
+                </p>
+
+                <select class="pureSelect">
+                    <option>Select City</option>
+                    <option>New York</option>
+                    <option>Paris</option>
+                    <option>London</option>
+                    <option>Amsterdam</option>
+                    <option>İstanbul</option>
+                </select>
+                                
+                <select class="pureSelect" disabled="disabled">
+                    <option>Select City</option>
+                    <option>New York</option>
+                    <option>Paris</option>
+                    <option>London</option>
+                    <option>Amsterdam</option>
+                    <option>İstanbul</option>
+                </select>
+                
+                <select class="pureSelect" disabled="disabled">
+                    <option>Select City</option>
+                    <option>New York</option>
+                    <option>Paris</option>
+                    <option>London</option>
+                    <option>Amsterdam</option>
+                    <option>İstanbul</option>
+                </select>
+
+            </div>
+    
+            
+            <div class="section">
+                <h4>Checkbox</h4>
+                <p class="desc">$('#elementName').pureForm();</p>
+                <input type="checkbox" name="22" class="pureCheck" checked="checked"/>
+                <input type="checkbox" name="22" class="pureCheck" checked="checked" disabled="disabled"/>
+                <h5>Variables</h5>
+                <em>checkBoxWidth: 32</em>
+                <em>checkBoxHeight: 32</em>
+                <h5>Two line css ↓</h5>
+            </div>
+    
+    
+            <div class="section">
+                <h4>Radio Buttton</h4>
+               <p class="desc">$('#elementName').pureForm();</p>
+
+                <input type="radio" name="22" class="pureRadio" checked="checked"/> 
+                <input type="radio" name="22" class="pureRadio" />
+                <label>Group 1</label>
+    
+                <br/>
+
+                <input type="radio" name="32" class="pureRadio" checked="checked"/>
+                <input type="radio" name="32" class="pureRadio" />
+                <label>Group 2</label>
+                
+                <h5>Variables</h5>
+                <em>radioWidth: 20</em>
+                <em>radioHeight: 20</em>
+                <h5>Two line css ↓</h5>
+            </div>
+        
+            <p> <strong>Browser Compatibility: </strong>Chrome, Firefox, Safari, Opera, Explorer 8+ and All Mobile Browsers </p>
+            <a href="pureForm.zip" style="position: absolute; top: 30px; right: 30px; font-size: 19px;">Download</a>
+        </div>
+
+    </body>
+</html>

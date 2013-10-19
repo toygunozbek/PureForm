@@ -1,0 +1,12 @@
+﻿.pureSelect { background: #FFF; border: 1px solid #AAA; border-radius: 5px; color: #000; }
+.pureSelect .pureArrow { width: 20px; height: 20px; position: absolute; top: 5px; right: 5px; background: url(img/dropDownArrow.png) 0 0; }
+.pureSelect:hover .pureArrow { background: url(img/dropDownArrow.png) 0 -20px; } /* Hover */
+.pureSelect .disabled { background: #333; color: #FFF; } /* Disabled */
+
+
+.pureCheck .checked { background: url(img/checkbox.png) no-repeat 0 0; }
+.pureCheck .non-checked { background: url(img/checkbox.png) 0 -32px; }
+.pureCheck .disabled { background: url(img/checkbox.png) no-repeat 0 0; }
+
+.pureRadio .active { background: url(img/radio.png) no-repeat 0 -20px; }
+.pureRadio .deactive { background: url(img/radio.png) no-repeat 0 0; }
