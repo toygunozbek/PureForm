@@ -10,105 +10,128 @@
     <script>
         $(document).ready(function () {
             $('.pureSelect').pureForm({ // Select
-                dropDownWidth: 285,
-                dropDownHeight: 30,
-                dropDownPadding: 5
+                width: 285,
+                height: 30,
+                padding: 5
             });
 
             $('.pureCheck').pureForm({ // Checkbox
-                checkBoxWidth: 32,
-                checkBoxHeight: 32,
+                width: 32,
+                height: 32,
             });
 
             $('.pureRadio').pureForm({ // Radio
-                radioWidth: 20,
-                radioHeight:20
+                width: 20,
+                height: 20
+            });
+
+            $('.pureFile').pureForm({ // FU Button
+                width: 40,
+                height: 50,
+                text: 'Dosya Seçilmedi',
+                maxTextWidth: 200,
+                closeButton: true
             });
         });
     </script>
 </head>
-    <body>
-        
-        <div class="container">
-           
-            <h1>PureForm()</h1>
-            <h3>Custom form elements</h3>
-        
-            <div class="section">
-                <h4>Select ( Dropdown List )</h4>
-                <p class="desc">$('#elementName').pureForm();
-                    <h5>Variables</h5>
-                    <em>dropDownWidth: 150</em>
-                    <em>dropDownHeight: 30</em>
-                    <em>dropDownPadding: 5</em>
-                    <h5>Three line css ↓</h5>
-                </p>
+<body>
 
-                <select class="pureSelect">
-                    <option>Select City</option>
-                    <option>New York</option>
-                    <option>Paris</option>
-                    <option>London</option>
-                    <option>Amsterdam</option>
-                    <option>İstanbul</option>
-                </select>
-                                
-                <select class="pureSelect" disabled="disabled">
-                    <option>Select City</option>
-                    <option>New York</option>
-                    <option>Paris</option>
-                    <option>London</option>
-                    <option>Amsterdam</option>
-                    <option>İstanbul</option>
-                </select>
-                
-                <select class="pureSelect" disabled="disabled">
-                    <option>Select City</option>
-                    <option>New York</option>
-                    <option>Paris</option>
-                    <option>London</option>
-                    <option>Amsterdam</option>
-                    <option>İstanbul</option>
-                </select>
+    <div class="container">
 
-            </div>
-    
+        <h1>PureForm.js</h1>
+        
+        <h3>Custom Form Plugin</h3>
+        
+        <div class="browserSupport"><img src="App_Themes/img/browserSupport.png" alt=""/></div>
+        <div class="download"><a href="https://github.com/toygunozbek/PureForm" target="_blank"><img src="App_Themes/img/gitDownload.png" alt="" /></a></div>
+
+        <div class="section">
+            <h4>Select ( Dropdown List )</h4>
+
+            <em>Dropdown List (Select):</em>
+            <select class="pureSelect">
+                <option>Select City</option>
+                <option>New York</option>
+                <option>Paris</option>
+                <option>London</option>
+                <option>Amsterdam</option>
+                <option>İstanbul</option>
+            </select>
+
+            <br />
+
+            <em>Disable State:</em>
+            <select class="pureSelect" disabled="disabled">
+                <option>Disabled</option>
+                <option>New York</option>
+                <option>Paris</option>
+                <option>London</option>
+                <option>Amsterdam</option>
+                <option>İstanbul</option>
+            </select>
             
-            <div class="section">
-                <h4>Checkbox</h4>
-                <p class="desc">$('#elementName').pureForm();</p>
-                <input type="checkbox" name="22" class="pureCheck" checked="checked"/>
-                <input type="checkbox" name="22" class="pureCheck" checked="checked" disabled="disabled"/>
-                <h5>Variables</h5>
-                <em>checkBoxWidth: 32</em>
-                <em>checkBoxHeight: 32</em>
-                <h5>Two line css ↓</h5>
-            </div>
-    
-    
-            <div class="section">
-                <h4>Radio Buttton</h4>
-               <p class="desc">$('#elementName').pureForm();</p>
-
-                <input type="radio" name="22" class="pureRadio" checked="checked"/> 
-                <input type="radio" name="22" class="pureRadio" />
-                <label>Group 1</label>
-    
-                <br/>
-
-                <input type="radio" name="32" class="pureRadio" checked="checked"/>
-                <input type="radio" name="32" class="pureRadio" />
-                <label>Group 2</label>
-                
-                <h5>Variables</h5>
-                <em>radioWidth: 20</em>
-                <em>radioHeight: 20</em>
-                <h5>Two line css ↓</h5>
-            </div>
-        
-            <p> <strong>Browser Compatibility: </strong>Chrome, Firefox, Safari, Opera, Explorer 8+ and All Mobile Browsers </p>
-            <a href="pureForm.zip" style="position: absolute; top: 30px; right: 30px; font-size: 19px;">Download</a>
+            <em>Using:</em>
+            <iframe width="100%" height="250" src="http://jsfiddle.net/toygunozbek/4nNU7/1/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <em>Jquery Parameters: width, height, padding &amp; Base Css</em>
         </div>
 
-    </body>
+
+        <div class="section">
+            <h4>Checkbox</h4>
+            <em>Checked & Non Checked:</em>
+            <input type="checkbox" name="22" class="pureCheck" checked="checked" />
+            <input type="checkbox" name="22" class="pureCheck" />
+
+            <br />
+
+            <em>Disable State:</em>
+            <input type="checkbox" name="22" class="pureCheck" checked="checked" disabled="disabled" />
+            <input type="checkbox" name="22" class="pureCheck" disabled="disabled" />
+            
+            <em>Using:</em>
+            <iframe width="100%" height="250" src="http://jsfiddle.net/toygunozbek/abT9d/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <em>Jquery Parameters: width, height &amp; Base Css</em>
+        </div>
+
+
+        <div class="section">
+            <h4>Radio Buttton</h4>
+            <em>Group 1:</em>
+            <input type="radio" name="group1" class="pureRadio" checked="checked" />
+            <input type="radio" name="group1" class="pureRadio" />
+            <input type="radio" name="group1" class="pureRadio" />
+            <input type="radio" name="group1" class="pureRadio" />
+
+            <br />
+
+            <em>Group 2:</em>
+            <input type="radio" name="group2" class="pureRadio" />
+            <input type="radio" name="group2" class="pureRadio" />
+            <input type="radio" name="group2" class="pureRadio" checked="checked" />
+            <input type="radio" name="group2" class="pureRadio" />
+            
+            <em>Using:</em>
+            <iframe width="100%" height="200" src="http://jsfiddle.net/toygunozbek/VvgFR/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <em>Jquery Parameters: width, height &amp; Base Css</em>
+        </div>
+
+        <div class="section">
+            <h4>File Upload Button</h4>
+            <input type="file" name="upFile" class="pureFile" />
+            <em>Using:</em>
+            <iframe width="100%" height="300" src="http://jsfiddle.net/toygunozbek/zhMm8/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <em>Jquery Parameters: width, height, text, maxTextWidth, closeButton &amp; Base Css</em>
+        </div>
+        
+            
+        <p class="lastTy">
+            Thanks for recommended, <br/> 
+            developer: <a href="http://www.toygunn.com" target="_blank">toygun ozbek</a> 
+            <a href="mailto:toygunn@toygunn.com">mail</a>
+        </p>
+
+    </div>
+
+</body>
 </html>

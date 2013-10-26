@@ -1,12 +1,29 @@
-﻿.pureSelect { background: #FFF; border: 1px solid #AAA; border-radius: 5px; color: #000; }
-.pureSelect .pureArrow { width: 20px; height: 20px; position: absolute; top: 5px; right: 5px; background: url(img/dropDownArrow.png) 0 0; }
-.pureSelect:hover .pureArrow { background: url(img/dropDownArrow.png) 0 -20px; } /* Hover */
-.pureSelect .disabled { background: #333; color: #FFF; } /* Disabled */
+﻿
+/* SELECT */
+.pureSelect { background: #FFF; border: 1px solid #AAA; border-radius: 5px; color: #000; }
+.pureSelect .pureArrow { width: 20px; height: 20px; position: absolute; top: 5px; right: 5px; background: url(img/pureFormSprite.png) -188px -16px; }
+/* Disable State */
+.pureSelect .disabled { background: #CCC ; color: #333; }
+.pureSelect .disabled .pureArrow { background: url(img/pureFormSprite.png) -188px -44px; }
 
+/*******************************************************************/
 
-.pureCheck .checked { background: url(img/checkbox.png) no-repeat 0 0; }
-.pureCheck .non-checked { background: url(img/checkbox.png) 0 -32px; }
-.pureCheck .disabled { background: url(img/checkbox.png) no-repeat 0 0; }
+/* CHECKBOX */
+.pureCheck .checked { background: url(img/pureFormSprite.png) no-repeat -33px 0; }
+.pureCheck .non-checked { background: url(img/pureFormSprite.png) 0 0; }
+/* Disable State */
+.pureCheck .checked-disabled { background: url(img/pureFormSprite.png) no-repeat -33px -33px; }
+.pureCheck .non-checked-disabled { background: url(img/pureFormSprite.png) no-repeat 0 -33px; }
 
-.pureRadio .active { background: url(img/radio.png) no-repeat 0 -20px; }
-.pureRadio .deactive { background: url(img/radio.png) no-repeat 0 0; }
+/*******************************************************************/
+
+/* RADIO BUTTON */
+.pureRadio .active { background: url(img/pureFormSprite.png) no-repeat -163px -16px; }
+.pureRadio .deactive { background: url(img/pureFormSprite.png) no-repeat -163px -44px; }
+
+/*******************************************************************/
+
+/* FILE UPLOAD BUTTON */
+.pureFile .selected { background: url(img/pureFormSprite.png) no-repeat -117px -16px; }
+.pureFile .non-selected { background: url(img/pureFormSprite.png) no-repeat -74px -16px; }
+.pureFile .pureFileText { padding: 0 5px; line-height: 50px; font-size: 13px; }

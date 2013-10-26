@@ -1,15 +1,16 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; }
+body { font-family: 'Open Sans', sans-serif; }
 
-h1 { margin: 0; color: midnightblue; }
-h3 { margin: 10px 0 0 0; color: purple; }
-h4 { margin: 0; color: royalblue; font-size: 18px; text-decoration: underline; }
-h5 { margin: 10px 0; color: blueviolet; }
+h1 { margin: 0; color: #4282c4; }
+h3 { margin: 0 0 10px 0; color: #1468c0; font-size: 18px; }
+h4 { margin: 0 0 10px 0; color: #4282c4; font-size: 18px; }
 em { display: block; font-size: 13px; }
 label { font-size: 13px; line-height: 0; }
 
-
-.container { width: 920px; margin: 40px auto; padding: 20px; background: #CCC; border: 1px solid #aaa; border-radius: 5px; position: relative; }
-.container .section { width: 100%; margin: 20px 0 0 0; display: inline-block; }
-.container .section .desc { }
+.container { width: 960px; margin: 40px auto; padding: 20px; background:#eee; border: 1px solid #aaa; border-radius: 5px; position: relative; }
+.container .section { width: 100%; margin: 40px 0 0 0; display: inline-block; }
+.container .browserSupport { position: absolute; top: 20px; right: 20px; }
+.container .download { width: 100px; height: 50px; position: absolute; top: 130px; right: 35px; }
+.container .lastTy { padding: 20px 0; text-align: center; font-size: 14px; font-style: italic;}
+.container .lastTy a { color: #4282c4; font-style: normal;}
