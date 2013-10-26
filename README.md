@@ -13,3 +13,6 @@ $("#elementName").pureForm();
 * Safari
 * Opera 
 * All Mobile Browsers
+
+Demo: 
+http://toygunn.com/Uploads/PureForm/
