@@ -1,6 +1,6 @@
 <h1>Pure Form</h1>
 
-<h5>Custom Form Plugin ( Select, Checkbox, Radio Button )</h5>
+<h5>Custom Form Plugin ( Select, Checkbox, Radio Button and File Upload )</h5>
 
 <h4> Using </h4>
 $("#elementName").pureForm();
