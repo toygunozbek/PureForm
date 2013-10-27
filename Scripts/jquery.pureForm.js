@@ -9,8 +9,13 @@
         // File Input Variables
         maxTextWidth: 150,
         closeButton: true,
-        text: 'Dosya Seçiniz'
+        text: 'Dosya Seçiniz',
 
+        // Text Input, Textarea Variables
+        glowEffect: true,
+        glowColor: '#4282c4',
+        onlyNumbers: false,
+        onlyLetters : false,
     };
 
     var v = $.extend(defaultVariables, options);
@@ -238,6 +243,53 @@
                         $this.prev().hide();
                     }
                 });
+            }
+
+            if (inputType == 'text') {
+                // Placeholder
+                var inputValue = $this.val();
+                $this.focus(function () {
+                    $this.attr('value', '');
+                    $this.attr('placeholder', inputValue);
+                });
+
+                $this.focusout(function () {
+                     var inputPlaceholder = $this.attr('placeholder');
+                     $this.attr('value', inputPlaceholder);
+                });
+
+                // Glow Effect True State
+                if (v.glowEffect == true) {
+                    $this.focus(function () {
+                        $this.css({
+                            'box-shadow': '0 0 6px ' + v.glowColor + '',
+                            'border': '1px solid ' + v.glowColor + '',
+                            '-webkit-transition': 'all 0.30s ease-in-out',
+                            '-moz-transition': 'all 0.30s ease-in-out',
+                            '-ms-transition': 'all 0.30s ease-in-out',
+                            '-o-transition': 'all 0.30s ease-in-out',
+                            'outline': 'none'
+                        });
+                    });
+
+                    $this.focusout(function() {
+                        $this.attr('style', '');
+                    });
+                }
+
+                // Only Numbers True State
+                if (v.onlyNumbers == true) {
+                    $this.bind("keyup paste", function () {
+                        $this.val($this.val().replace(/[^0-9]/g, ''));
+                    });
+                }
+                
+                // Only Letters True State
+                if (v.onlyLetters == true) {
+                    $this.bind("keyup paste", function () {
+                        $this.val($this.val().replace(/[^a-zA-Z]/g, ''));
+                    });
+                }
             }
         }
     });

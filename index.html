@@ -25,12 +25,29 @@
                 height: 20
             });
 
-            $('.pureFile').pureForm({ // FU Button
+            $('.pureFile').pureForm({ // File Upload
                 width: 40,
                 height: 50,
                 text: 'Dosya Seçilmedi',
                 maxTextWidth: 200,
                 closeButton: true
+            });
+
+            $('.pureText').pureForm({ // Text
+                glowEffect: true,
+                glowColor: 'rgba(81, 203, 238, 1)' // or #CCC
+            });
+            
+            $('.pureNumericText').pureForm({ // Numeric Text
+                glowEffect: true,
+                glowColor: 'rgba(81, 203, 238, 1)', // or #CCC
+                onlyNumbers : true
+            });
+            
+            $('.pureAlphabeticText').pureForm({ // Alphabetic Text
+                glowEffect: true,
+                glowColor: 'rgba(81, 203, 238, 1)', // or #CCC
+                onlyLetters: true
             });
         });
     </script>
@@ -49,7 +66,7 @@
         <div class="section">
             <h4>Select ( Dropdown List )</h4>
 
-            <em>Dropdown List (Select):</em>
+            <em>Default State:</em>
             <select class="pureSelect">
                 <option>Select City</option>
                 <option>New York</option>
@@ -72,14 +89,13 @@
             </select>
             
             <em>Using:</em>
-            <iframe width="100%" height="250" src="http://jsfiddle.net/toygunozbek/4nNU7/1/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <iframe width="100%" height="180" src="http://jsfiddle.net/toygunozbek/4nNU7/1/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
             <em>Jquery Parameters: width, height, padding &amp; Base Css</em>
         </div>
 
-
         <div class="section">
             <h4>Checkbox</h4>
-            <em>Checked & Non Checked:</em>
+            <em>Default State:</em>
             <input type="checkbox" name="22" class="pureCheck" checked="checked" />
             <input type="checkbox" name="22" class="pureCheck" />
 
@@ -90,10 +106,9 @@
             <input type="checkbox" name="22" class="pureCheck" disabled="disabled" />
             
             <em>Using:</em>
-            <iframe width="100%" height="250" src="http://jsfiddle.net/toygunozbek/abT9d/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <iframe width="100%" height="180" src="http://jsfiddle.net/toygunozbek/abT9d/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
             <em>Jquery Parameters: width, height &amp; Base Css</em>
         </div>
-
 
         <div class="section">
             <h4>Radio Buttton</h4>
@@ -112,18 +127,61 @@
             <input type="radio" name="group2" class="pureRadio" />
             
             <em>Using:</em>
-            <iframe width="100%" height="200" src="http://jsfiddle.net/toygunozbek/VvgFR/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <iframe width="100%" height="180" src="http://jsfiddle.net/toygunozbek/VvgFR/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
             <em>Jquery Parameters: width, height &amp; Base Css</em>
         </div>
-
+        
         <div class="section">
             <h4>File Upload Button</h4>
             <input type="file" name="upFile" class="pureFile" />
             <em>Using:</em>
-            <iframe width="100%" height="300" src="http://jsfiddle.net/toygunozbek/zhMm8/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <iframe width="100%" height="180" src="http://jsfiddle.net/toygunozbek/zhMm8/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
             <em>Jquery Parameters: width, height, text, maxTextWidth, closeButton &amp; Base Css</em>
         </div>
         
+        <div class="section">
+            <h4>Text Input</h4>
+
+            <em>Default State:</em>
+            <input type="text" class="pureText" value="Placeholder Active" />
+
+            <em>Disabled State:</em>
+            <input type="text" class="pureText" value="Placeholder Active" disabled="disabled" />
+
+            <em>Using:</em>
+            <iframe width="100%" height="180" src="http://jsfiddle.net/toygunozbek/87xUA/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <em>Jquery Parameters: glowEffect, glowColor &amp; Base Css</em>
+        </div>
+        
+        <div class="section">
+            <h4>Numeric Text Input (0-9)</h4>
+
+            <em>Default State:</em>
+            <input type="text" class="pureNumericText" value="0123456789" />
+
+            <em>Disabled State:</em>
+            <input type="text" class="pureNumericText" value="0123456789" disabled="disabled" />
+
+            <em>Using:</em>
+            <iframe width="100%" height="180" src="http://jsfiddle.net/toygunozbek/6WVwf/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>            
+
+            <em>Jquery Parameters: glowEffect, glowColor, onlyNumbers &amp; Base Css</em>
+        </div>
+        
+        <div class="section">
+            <h4>Alphabetic Text Input (A-Z)</h4>
+
+            <em>Default State:</em>
+            <input type="text" class="pureAlphabeticText" value="abcdefghıijklmn" />
+
+            <em>Disabled State:</em>
+            <input type="text" class="pureAlphabeticText" value="abcdefghıijklmn" disabled="disabled" />
+
+            <em>Using:</em>
+            <iframe width="100%" height="180" src="http://jsfiddle.net/toygunozbek/P8dgt/embedded/js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>            
+
+            <em>Jquery Parameters: glowEffect, glowColor, onlyLetters &amp; Base Css</em>
+        </div>
             
         <p class="lastTy">
             Thanks for recommended, <br/> 

@@ -27,3 +27,18 @@
 .pureFile .selected { background: url(img/pureFormSprite.png) no-repeat -117px -16px; }
 .pureFile .non-selected { background: url(img/pureFormSprite.png) no-repeat -74px -16px; }
 .pureFile .pureFileText { padding: 0 5px; line-height: 50px; font-size: 13px; }
+
+/*******************************************************************/
+
+/* TEXT INPUT */
+.pureText { width: 150px; height: 23px; padding: 3px 0px 3px 3px; border: 1px solid #DDDDDD; border-radius: 4px; }
+
+/*******************************************************************/
+
+/* NUMERIC TEXT INPUT */
+.pureNumericText { width: 150px; height: 23px; padding: 3px 0px 3px 3px; border: 1px solid #DDDDDD; border-radius: 4px; }
+
+/*******************************************************************/
+
+/* ALPHABETIC TEXT INPUT */
+.pureAlphabeticText { width: 150px; height: 23px; padding: 3px 0px 3px 3px; border: 1px solid #DDDDDD; border-radius: 4px; }
