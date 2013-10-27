@@ -13,3 +13,6 @@ $("#elementName").pureForm();
 * Safari
 * Opera 
 * All Mobile Browsers
+
+<h2>v1.1 Out Now</h2>
+Text Input, Numeric Input and Alphabetic Input added.
